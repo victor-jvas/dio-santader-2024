@@ -1,12 +1,14 @@
 package edu.dio.santanderdevweek.service;
 
+import edu.dio.santanderdevweek.domain.model.CharacterModel;
+
 import java.util.List;
 
 public interface CharacterService {
 
-    Character findById(Long id);
-    List<Character> findAll();
-    Character save(Character character);
-    Character update(Character character);
-    Character delete(Long id);
+    CharacterModel findById(Long id);
+    List<CharacterModel> findAll();
+    void save(CharacterModel character);
+    void update(CharacterModel character);
+    void delete(Long id);
 }
